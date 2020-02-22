@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech notes</title>
+    <link>https://arkadiam.github.io/antenna/</link>
+    <description>Recent content on Tech notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 22 Feb 2020 07:48:27 -0500</lastBuildDate>
+    
+	<atom:link href="https://arkadiam.github.io/antenna/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QRP 40m-10m UnUnTenna</title>
+      <link>https://arkadiam.github.io/antenna/qrp-40-10-ununtenna-ali/</link>
+      <pubDate>Sat, 22 Feb 2020 07:48:27 -0500</pubDate>
+      
+      <guid>https://arkadiam.github.io/antenna/qrp-40-10-ununtenna-ali/</guid>
+      <description>40m-10m UnUnTenna Kit from Aliexpress These kits are sold on Aliexpress and Ebay and at the time of wiring they are about $15.35 USD shipped.
+QRPGuys 40m-10m UnUnTenna</description>
+    </item>
+    
+  </channel>
+</rss>

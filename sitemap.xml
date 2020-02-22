@@ -3,6 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://arkadiam.github.io/antenna/</loc>
+    <lastmod>2020-02-22T07:48:27-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arkadiam.github.io/tags/antenna/</loc>
+    <lastmod>2020-02-22T07:48:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arkadiam.github.io/tags/qrp/</loc>
+    <lastmod>2020-02-22T07:48:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arkadiam.github.io/antenna/qrp-40-10-ununtenna-ali/</loc>
+    <lastmod>2020-02-22T07:48:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arkadiam.github.io/tags/</loc>
+    <lastmod>2020-02-22T07:48:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arkadiam.github.io/</loc>
+    <lastmod>2020-02-22T07:48:27-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://arkadiam.github.io/logger/cqrlog/</loc>
     <lastmod>2020-02-17T20:51:28-05:00</lastmod>
   </url>
@@ -18,16 +49,6 @@
   </url>
   
   <url>
-    <loc>https://arkadiam.github.io/tags/</loc>
-    <lastmod>2020-02-17T20:51:28-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://arkadiam.github.io/</loc>
-    <lastmod>2020-02-17T20:51:28-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://arkadiam.github.io/atu/</loc>
     <lastmod>2020-02-17T17:48:27-05:00</lastmod>
     <priority>0</priority>
@@ -35,11 +56,6 @@
   
   <url>
     <loc>https://arkadiam.github.io/tags/atu/</loc>
-    <lastmod>2020-02-17T17:48:27-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://arkadiam.github.io/tags/qrp/</loc>
     <lastmod>2020-02-17T17:48:27-05:00</lastmod>
   </url>
   
