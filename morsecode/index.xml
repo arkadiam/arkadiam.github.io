@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MorseCode on Tech Notebook</title>
+    <link>https://arkadiam.github.io/morsecode/</link>
+    <description>Recent content in MorseCode on Tech Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Feb 2020 18:47:06 -0500</lastBuildDate>
+    
+	<atom:link href="https://arkadiam.github.io/morsecode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zen and Art of Radiotelegraphy Book</title>
+      <link>https://arkadiam.github.io/morsecode/zen-and-art-of-radiotelegraphy-book/</link>
+      <pubDate>Tue, 25 Feb 2020 18:47:06 -0500</pubDate>
+      
+      <guid>https://arkadiam.github.io/morsecode/zen-and-art-of-radiotelegraphy-book/</guid>
+      <description>Free book by Carlo Consoli, IK0YGJ ZEN AND THE ART OF RADIOTELEGRAPHY</description>
+    </item>
+    
+  </channel>
+</rss>

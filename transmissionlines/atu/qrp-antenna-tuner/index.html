@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>QRP Antenna Tuner - Tech Notebook</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	
+	
+	
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Tech Notebook" rel="home">
+				<div class="logo__title">Tech Notebook</div>
+				<div class="logo__tagline">“If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.” - Nikola Tesla</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/antennas/">
+				
+				<span class="menu__text">Antennas</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/transmissionlines/">
+				
+				<span class="menu__text">Transmission Lines</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/transceivers/">
+				
+				<span class="menu__text">Transceivers</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/morsecode/">
+				
+				<span class="menu__text">Morse code</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/logger/">
+				
+				<span class="menu__text">Logger</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">QRP Antenna Tuner</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-02-17T17:48:27-05:00">February 17, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/transmission-lines/" rel="category">Transmission lines</a>
+	</span>
+</div></div>
+		</header>
+		<figure class="post__thumbnail">
+			<img src="/atu-kit-parts-thumb.jpg" alt="QRP Antenna Tuner">
+		</figure><div class="content post__content clearfix">
+			<h2 id="diy-kit-from-aliexpress-or-ebay">DIY kit from Aliexpress or Ebay</h2>
+<p>Thse kits are sold on Aliexpress and Ebay and at the time of wiring they
+cost about $13 USD shipped.</p>
+<p><img src="atu-kit-parts.jpg" alt="ATU kit" title="kit content"></p>
+<p>Roots of this tuner can be traced to a QRP console designed by Doug DeMaw
+featured in QST article: &ldquo;A QRP Console&rdquo; Doug DeMaw, QST, Sept. 1970, p. 23-25.</p>
+<p>SWR indicator used in this tuner is based on Dan Tayloe design:</p>
+<ul>
+<li><a href="http://www.qrpkits.com/swrind_case.html">SWR Indicator Bridge Kit</a></li>
+<li><a href="http://www.qrpkits.com/files/LED%20SWR%20v3.pdf">N7VE LED SWR Bridge Manual</a></li>
+<li><a href="http://www.qrpkits.com/files/LED_SWR_Schematic.pdf">LED SWR Schematic</a></li>
+</ul>
+<p>Tuner is using a high-pass T-network to match low input impedance (Z) to a
+high output Z.</p>
+<p>Detailed explanation of how T-network operates and the best practices of
+using such tuners covered in QST Jan 1995,
+<a href="http://www.arrl.org/files/file/Technology/tis/info/pdf/9501046.pdf">Getting the Most Out of Your T-Network Antenna Tuner</a></p>
+<h4 id="schematic">Schematic</h4>
+<p><img src="qrp-kit-antenna-tuner-schematics.png" alt="Schematic" title="QRP antenna tuner schematics"></p>
+<h4 id="build-notes">Build notes</h4>
+<p>Solder all components of the SWR bridge with the exception of LED.  It&rsquo;ll be
+easy to estimate require length of the terminals and how they should be bent
+right before installing the bridge in the enclosure.</p>
+<p>FT37-43 - pay attention to the sides: IN 2 turns, OUT 5 turns.  Some kits
+have this mislabeled on the PCB.</p>
+
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/swr-bridge.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/swr-bridge_hu07340ff132c8fe0c0e41eb42b51e31bd_1893726_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/swr-bridge_hu07340ff132c8fe0c0e41eb42b51e31bd_1893726_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/swr-bridge_hu07340ff132c8fe0c0e41eb42b51e31bd_1893726_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/swr-bridge_hu07340ff132c8fe0c0e41eb42b51e31bd_1893726_600x0_resize_q75_box.jpg" alt="SWR bridge"/>
+    </a>
+    <figcaption><p>SWR bridge assembly.</p></figcaption>
+  </figure>
+
+
+<p>Wind the toroid following
+<a href="http://m1kta-qrp.blogspot.com/2014/05/comments-on-chinese-atu.html">M1KTA build notes</a>
+and solder it on rotary switch following the schematic.</p>
+<p>
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/ind1.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/ind1_hu290392e7077c84c2a01d242685012cc0_1391965_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/ind1_hu290392e7077c84c2a01d242685012cc0_1391965_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/ind1_hu290392e7077c84c2a01d242685012cc0_1391965_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/ind1_hu290392e7077c84c2a01d242685012cc0_1391965_600x0_resize_q75_box.jpg" alt="T106-2 winding"/>
+    </a>
+    <figcaption><p>T106-2 winding.</p></figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/ind2.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/ind2_hu431e14fd9a3c81dea4cc2c7e914d0674_784664_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/ind2_hu431e14fd9a3c81dea4cc2c7e914d0674_784664_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/ind2_hu431e14fd9a3c81dea4cc2c7e914d0674_784664_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/ind2_hu431e14fd9a3c81dea4cc2c7e914d0674_784664_600x0_resize_q75_box.jpg" alt="T106-2 winding"/>
+    </a>
+    <figcaption><p>T106-2 winding.</p></figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/ind3.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/ind3_hu85ca10be69f05138a54b8339f3fed5e8_940423_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/ind3_hu85ca10be69f05138a54b8339f3fed5e8_940423_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/ind3_hu85ca10be69f05138a54b8339f3fed5e8_940423_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/ind3_hu85ca10be69f05138a54b8339f3fed5e8_940423_600x0_resize_q75_box.jpg" alt="T106-2 winding"/>
+    </a>
+    <figcaption><p>T106-2 winding.</p></figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/ind4.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/ind4_hu9e5ae1a82130b715adccc278b5eec987_1757286_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/ind4_hu9e5ae1a82130b715adccc278b5eec987_1757286_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/ind4_hu9e5ae1a82130b715adccc278b5eec987_1757286_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/ind4_hu9e5ae1a82130b715adccc278b5eec987_1757286_600x0_resize_q75_box.jpg" alt="Rotary switch with toroid assembly"/>
+    </a>
+    <figcaption><p>Rotary switch with toroid assembly.</p></figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/ind5.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/ind5_hubec62ccea1707b6e644451c46e922224_1666391_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/ind5_hubec62ccea1707b6e644451c46e922224_1666391_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/ind5_hubec62ccea1707b6e644451c46e922224_1666391_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/ind5_hubec62ccea1707b6e644451c46e922224_1666391_600x0_resize_q75_box.jpg" alt="Rotary switch with toroid assembly"/>
+    </a>
+    <figcaption><p>Rotary switch with toroid assembly.</p></figcaption>
+  </figure>
+
+</p>
+<p>Using supplied templates drill the holes in the enclosure.  It might be hard
+to tell what template to use on what side of the enclosure.  Pay attention
+to the position of BNC connectors.  Their central connector should be above
+variable capacitors.</p>
+<p>If you decide to remove the templates, they may leave a sticky residue on
+the enclosure that is hard to clean.  In this case you may use WD-40, baby oil or
+cooking oil and a piece of cloth to wipe it out.</p>
+<p>
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/cap1.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/cap1_hu607849e9987848e774a3ebf7d6fcefe3_2820311_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/cap1_hu607849e9987848e774a3ebf7d6fcefe3_2820311_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/cap1_hu607849e9987848e774a3ebf7d6fcefe3_2820311_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/cap1_hu607849e9987848e774a3ebf7d6fcefe3_2820311_600x0_resize_q75_box.jpg" alt="Distance between capacitors"/>
+    </a>
+    <figcaption><p>Approximate distance between capacitors.</p></figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/cap2.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/cap2_hu69665354a652dd543dd126e47f66ddbc_2211784_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/cap2_hu69665354a652dd543dd126e47f66ddbc_2211784_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/cap2_hu69665354a652dd543dd126e47f66ddbc_2211784_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/cap2_hu69665354a652dd543dd126e47f66ddbc_2211784_600x0_resize_q75_box.jpg" alt="Wiring capacitors"/>
+    </a>
+    <figcaption><p>Wiring capacitors.</p></figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/cap3-installed.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/cap3-installed_hua9d1ed0a58c0b66d8a634df548c07317_2200823_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/cap3-installed_hua9d1ed0a58c0b66d8a634df548c07317_2200823_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/cap3-installed_hua9d1ed0a58c0b66d8a634df548c07317_2200823_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/cap3-installed_hua9d1ed0a58c0b66d8a634df548c07317_2200823_600x0_resize_q75_box.jpg" alt="Capacitors installed"/>
+    </a>
+    <figcaption><p>Capacitors installed.</p></figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/cap4-encl.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/cap4-encl_hubfca245dc3eb05232e98dc1960b8844e_1444203_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/cap4-encl_hubfca245dc3eb05232e98dc1960b8844e_1444203_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/cap4-encl_hubfca245dc3eb05232e98dc1960b8844e_1444203_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/cap4-encl_hubfca245dc3eb05232e98dc1960b8844e_1444203_600x0_resize_q75_box.jpg" alt="Capacitors installed, front side."/>
+    </a>
+    <figcaption><p>Capacitors installed, front side.</p></figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/cap-nobs.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/cap-nobs_huabe72783ce3066200f439e4c1ffa003a_1145917_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/cap-nobs_huabe72783ce3066200f439e4c1ffa003a_1145917_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/cap-nobs_huabe72783ce3066200f439e4c1ffa003a_1145917_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/cap-nobs_huabe72783ce3066200f439e4c1ffa003a_1145917_600x0_resize_q75_box.jpg" alt="Capacitor nob"/>
+    </a>
+    <figcaption><p>Capacitor&#39;s nob assembly.</p></figcaption>
+  </figure>
+
+</p>
+<p>Install the SWR bridge and wire everything following the schematic diagram.</p>
+<p>
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/asm1-bnc.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/asm1-bnc_hu145d6f0069c6f9e32134f686abe695e8_2110052_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/asm1-bnc_hu145d6f0069c6f9e32134f686abe695e8_2110052_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/asm1-bnc_hu145d6f0069c6f9e32134f686abe695e8_2110052_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/asm1-bnc_hu145d6f0069c6f9e32134f686abe695e8_2110052_600x0_resize_q75_box.jpg" alt="Caps and SWR bridge installed"/>
+    </a>
+    <figcaption><p>Capacitors and SWR bridge installed.</p></figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/asm2-bnc.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/asm2-bnc_hu89de30ab7cb6a68ea81fac0d10cece97_2198003_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/asm2-bnc_hu89de30ab7cb6a68ea81fac0d10cece97_2198003_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/asm2-bnc_hu89de30ab7cb6a68ea81fac0d10cece97_2198003_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/asm2-bnc_hu89de30ab7cb6a68ea81fac0d10cece97_2198003_600x0_resize_q75_box.jpg" alt="Caps and SWR bridge installed"/>
+    </a>
+    <figcaption><p>SWR bridge wiring.</p></figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/asm3.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/asm3_hu0d49bef086cd4496c1069b451b3b0a1f_2171278_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/asm3_hu0d49bef086cd4496c1069b451b3b0a1f_2171278_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/asm3_hu0d49bef086cd4496c1069b451b3b0a1f_2171278_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/asm3_hu0d49bef086cd4496c1069b451b3b0a1f_2171278_600x0_resize_q75_box.jpg" alt="Caps, Inductor and final wiring"/>
+    </a>
+    <figcaption><p>Rotary switch and inductor installed and wired.</p></figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <a href="/transmissionlines/atu/qrp-antenna-tuner/asm4.jpg">
+      <img
+        srcset="
+          /transmissionlines/atu/qrp-antenna-tuner/asm4_hu6bbd4fbe800935b11aae66997c904e20_2243474_320x0_resize_q75_box.jpg 320w,
+          /transmissionlines/atu/qrp-antenna-tuner/asm4_hu6bbd4fbe800935b11aae66997c904e20_2243474_600x0_resize_q75_box.jpg 600w,
+          /transmissionlines/atu/qrp-antenna-tuner/asm4_hu6bbd4fbe800935b11aae66997c904e20_2243474_1200x0_resize_q75_box.jpg 2x"
+        src="/transmissionlines/atu/qrp-antenna-tuner/asm4_hu6bbd4fbe800935b11aae66997c904e20_2243474_600x0_resize_q75_box.jpg" alt="Caps, Inductor and final wiring"/>
+    </a>
+    <figcaption><p>Rotary switch and inductor installed and wired.</p></figcaption>
+  </figure>
+
+</p>
+<h4 id="m1kta-build-notes">M1KTA Build Notes</h4>
+<p><a href="http://m1kta-qrp.blogspot.com/2014/05/comments-on-chinese-atu.html">M1KTA comments on the Chinese ATU</a></p>
+<ul>
+<li><a href="https://app.box.com/s/so3ov9b0zjsz3dysj1s9/1/1331269728/11820041217/1">Build instructions, English</a></li>
+<li><a href="https://app.box.com/s/so3ov9b0zjsz3dysj1s9/1/1331269728/11898425138/1">Build instructions, Chinese</a></li>
+</ul>
+<h4 id="vk3ye-review-and-build-tips">VK3YE Review and Build Tips</h4>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/vHD4J4X9Ssg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=vHD4J4X9Ssg">Review</a></p>
+<h4 id="w5cyf--tinkerjohn-build-videos">W5CYF / TinkerJohn Build Videos</h4>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=jdFTwGv-CZY">Part1</a>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/jdFTwGv-CZY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+</li>
+<li>
+<p><a href="http://www.youtube.com/watch?v=hYeb-XN80FA">Part2</a>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/hYeb-XN80FA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+</li>
+</ul>
+<h4 id="operation">Operation</h4>
+<ul>
+<li>Connect Transceiver output to the left side BNC connector of the Tuner.</li>
+<li>Connect Antenna to the right side BNC connector of the Tuner.</li>
+<li>Set the inductance switch to the first (A) position and both capacitors to the
+center of their range.</li>
+<li>SWR bridge should be off (switch in a right position).</li>
+<li>Turn the inductance switch to the position where the noise is heard at its maximum.</li>
+<li>Turn on the SWR bridge (switch in a left position).</li>
+<li>Send a series of dits and observe the LED. Bright LED - high SWR.</li>
+<li>Slowly tune right capacitor (antenna side) to get the minimum LED brightness.</li>
+<li>Slowly tune left capacitor (transceiver side) to get the minimum LED brightness.</li>
+<li>Dim LED is a very good SWR, even better is to tune until the LED goes
+out. You&rsquo;ve achieved the lowest SWR for this frequency.</li>
+<li>Turn off the SWR bridge (switch in a right position).
+Keeping the bridge in the circuit will reduce the power by 6dB.</li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/atu/" rel="tag">ATU</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/qrp/" rel="tag">QRP</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com/">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		
+		<input type="hidden" name="sites" value="https://arkadiam.github.io" />
+	</form>
+</div>
+<div class="widget-sidemenu widget">
+	<h4 class="widget__title">Builds</h4>
+	<nav class="widget__content">
+		<ul class="widget__list">
+			
+			<li class="widget__item">
+				<a class="widget__link" href="/transmissionlines/atu/qrp-antenna-tuner/">QRP Antenna Tuner</a>
+			</li>
+			
+			<li class="widget__item">
+				<a class="widget__link" href="/antennas/qrp-40-10-ununtenna-ali/">QRP 40m-10m UnUnTenna</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/transmissionlines/atu/qrp-antenna-tuner/">QRP Antenna Tuner</a></li>
+			<li class="widget__item"><a class="widget__link" href="/morsecode/zen-and-art-of-radiotelegraphy-book/">Zen and Art of Radiotelegraphy Book</a></li>
+			<li class="widget__item"><a class="widget__link" href="/antennas/qrp-40-10-ununtenna-ali/">QRP 40m-10m UnUnTenna</a></li>
+			<li class="widget__item"><a class="widget__link" href="/logger/cqrlog/">Cqrlog</a></li>
+			<li class="widget__item"><a class="widget__link" href="/logger/tlf-logger/">Tlf Logger</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/arkadiam" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:arkadiam%20at%20protonmail%20dot%20com">
+				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>arkadiam at protonmail dot com</span>
+			</a>
+		</div>
+
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Tech Notebook.
+			
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script></body>
+</html>

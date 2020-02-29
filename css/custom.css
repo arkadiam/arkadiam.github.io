@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: 'routed_gothicregular';
+    src: url('fonts/routed-gothic-webfont.woff2') format('woff2'),
+         url('fonts/routed-gothic-webfont.woff') format('woff'),
+         url('fonts/routed-gothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+@font-face {
+    font-family: 'routed_gothicregular';
+    src: url('fonts/osifont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+/*
+html body {
+  font-family: 'routed_gothicregular';
+  font-size: 100%;
+}
+*/
+body h1 {
+  font-family: 'routed_gothicregular';
+}
+body h2 {
+  font-family: 'routed_gothicregular';
+}
+body h3 {
+  font-family: 'routed_gothicregular';
+}
+body h4 {
+  font-family: 'routed_gothicregular';
+}
+body h5 {
+  font-family: 'routed_gothicregular';
+}
+body h6 {
+  font-family: 'routed_gothicregular';
+}
+
+.title, .logo__title {
+  font-family: 'routed_gothicregular';
+}
+
+.logo__tagline {
+  text-transform: none;
+  font-style: italic;
+}

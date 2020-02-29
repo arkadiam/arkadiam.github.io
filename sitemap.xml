@@ -3,7 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://arkadiam.github.io/antenna/</loc>
+    <loc>https://arkadiam.github.io/transmissionlines/atu/qrp-antenna-tuner/</loc>
+    <lastmod>2020-02-17T17:48:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arkadiam.github.io/morsecode/</loc>
+    <lastmod>2020-02-25T18:47:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arkadiam.github.io/</loc>
+    <lastmod>2020-02-25T18:47:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arkadiam.github.io/morsecode/zen-and-art-of-radiotelegraphy-book/</loc>
+    <lastmod>2020-02-25T18:47:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arkadiam.github.io/antennas/</loc>
     <lastmod>2020-02-22T07:48:27-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -19,17 +39,12 @@
   </url>
   
   <url>
-    <loc>https://arkadiam.github.io/antenna/qrp-40-10-ununtenna-ali/</loc>
+    <loc>https://arkadiam.github.io/antennas/qrp-40-10-ununtenna-ali/</loc>
     <lastmod>2020-02-22T07:48:27-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://arkadiam.github.io/tags/</loc>
-    <lastmod>2020-02-22T07:48:27-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://arkadiam.github.io/</loc>
     <lastmod>2020-02-22T07:48:27-05:00</lastmod>
   </url>
   
@@ -49,7 +64,7 @@
   </url>
   
   <url>
-    <loc>https://arkadiam.github.io/atu/</loc>
+    <loc>https://arkadiam.github.io/transmissionlines/</loc>
     <lastmod>2020-02-17T17:48:27-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -60,7 +75,12 @@
   </url>
   
   <url>
-    <loc>https://arkadiam.github.io/atu/qrp-antenna-tuner/</loc>
+    <loc>https://arkadiam.github.io/categories/</loc>
+    <lastmod>2020-02-17T17:48:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arkadiam.github.io/categories/transmission-lines/</loc>
     <lastmod>2020-02-17T17:48:27-05:00</lastmod>
   </url>
   
@@ -70,11 +90,12 @@
   </url>
   
   <url>
-    <loc>https://arkadiam.github.io/authors/</loc>
+    <loc>https://arkadiam.github.io/transceivers/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://arkadiam.github.io/categories/</loc>
+    <loc>https://arkadiam.github.io/authors/</loc>
   </url>
   
   <url>

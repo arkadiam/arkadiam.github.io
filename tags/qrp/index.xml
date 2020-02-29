@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>QRP on Tech notes</title>
+    <title>QRP on Tech Notebook</title>
     <link>https://arkadiam.github.io/tags/qrp/</link>
-    <description>Recent content in QRP on Tech notes</description>
+    <description>Recent content in QRP on Tech Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Sat, 22 Feb 2020 07:48:27 -0500</lastBuildDate>
     
 	<atom:link href="https://arkadiam.github.io/tags/qrp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>QRP 40m-10m UnUnTenna</title>
-      <link>https://arkadiam.github.io/antenna/qrp-40-10-ununtenna-ali/</link>
-      <pubDate>Sat, 22 Feb 2020 07:48:27 -0500</pubDate>
+      <title>QRP Antenna Tuner</title>
+      <link>https://arkadiam.github.io/transmissionlines/atu/qrp-antenna-tuner/</link>
+      <pubDate>Mon, 17 Feb 2020 17:48:27 -0500</pubDate>
       
-      <guid>https://arkadiam.github.io/antenna/qrp-40-10-ununtenna-ali/</guid>
-      <description>40m-10m UnUnTenna Kit from Aliexpress These kits are sold on Aliexpress and Ebay and at the time of wiring they are about $15.35 USD shipped.
-QRPGuys 40m-10m UnUnTenna</description>
+      <guid>https://arkadiam.github.io/transmissionlines/atu/qrp-antenna-tuner/</guid>
+      <description>DIY kit from Aliexpress or Ebay Thse kits are sold on Aliexpress and Ebay and at the time of wiring they cost about $13 USD shipped.
+Roots of this tuner can be traced to a QRP console designed by Doug DeMaw featured in QST article: &amp;ldquo;A QRP Console&amp;rdquo; Doug DeMaw, QST, Sept. 1970, p. 23-25.
+SWR indicator used in this tuner is based on Dan Tayloe design:
+ SWR Indicator Bridge Kit N7VE LED SWR Bridge Manual LED SWR Schematic  Tuner is using a high-pass T-network to match low input impedance (Z) to a high output Z.</description>
     </item>
     
     <item>
-      <title>QRP Antenna Tuner</title>
-      <link>https://arkadiam.github.io/atu/qrp-antenna-tuner/</link>
-      <pubDate>Mon, 17 Feb 2020 17:48:27 -0500</pubDate>
+      <title>QRP 40m-10m UnUnTenna</title>
+      <link>https://arkadiam.github.io/antennas/qrp-40-10-ununtenna-ali/</link>
+      <pubDate>Sat, 22 Feb 2020 07:48:27 -0500</pubDate>
       
-      <guid>https://arkadiam.github.io/atu/qrp-antenna-tuner/</guid>
-      <description>DIY kit from Aliexpress or Ebay These kits are sold on Aliexpress and Ebay and at the time of wiring they are about $13 USD shipped.
-Roots of this tuner can be traced to a QRP console designed by Doug DeMaw featured in the QST article: &amp;ldquo;A QRP Console&amp;rdquo; Doug DeMaw, QST, Sept. 1970, p. 23-25.
-SWR indicator used in this tuner is based on Dan Tayloe design:
- SWR Indicator Bridge Kit N7VE LED SWR Bridge Manual LED SWR Schematic  Tuner is using a hig-pass T-network to match low input impedance (Z) to a high output Z.</description>
+      <guid>https://arkadiam.github.io/antennas/qrp-40-10-ununtenna-ali/</guid>
+      <description>40m-10m UnUnTenna Kit from Aliexpress These kits are sold on Aliexpress and Ebay and at the time of wiring they are about $15.35 USD shipped.
+QRPGuys 40m-10m UnUnTenna</description>
     </item>
     
   </channel>
