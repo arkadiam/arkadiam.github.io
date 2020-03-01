@@ -130,7 +130,7 @@ textarea {
 	color: #fff;
 	white-space: pre-line;
 /*	background: #2a2a2a; */
-	background: #464866; 
+	background: #464866;
 }
 
 .btn:hover {
@@ -472,7 +472,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .menu__list {
 	list-style: none;
 	/*background: #2a2a2a;*/
-	/*background: #464866;*/
 	background: #FFF;
 }
 
@@ -532,7 +531,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 @media screen and (min-width: 767px) {
 	.menu {
-		border-bottom: 5px solid #29648a;
+		border-bottom: 3px solid #29648a;
 	}
 
 	.menu__btn {
